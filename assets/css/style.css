@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Solway', serif;
+    font-weight: 400;
+}
+
+/* ROLAGEM */
+html {
+    scroll-behavior: smooth;
+}
+/* END ROLAGEM */
+
+/* SCROLL */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #166569 #252525;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #252525;
+    border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #166569;
+    border-radius: 20px;
+    border: 4px solid #252525;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #2a4b4d;
+}
+/* END SCROLL */
+
+body {
+    background-color: #0D1117;
+    color: rgb(179, 179, 179);
+}
+
+/* NAV-BAR */
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 5px rgb(179, 179, 179);
+    z-index: 1;
+}
+
+.nav-bar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 100px;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+}
+
+.name-logo {
+    float: left;
+    color: #00d2df;
+    letter-spacing: 0.2px;
+}
+
+.name-logo:hover {
+    color: #55f87d;
+    transition: 0.3s;
+}
+
+.menu {
+    list-style: none;
+    float: right;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-left: 25px;
+    letter-spacing: 0.5px;
+}
+
+.menu-item>a::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #00d2df;
+    transform: scaleX(0);
+    transition: 0.4s;
+}
+
+.menu-item>a:hover::after {
+    transform: scaleX(1);
+}
+
+.menu-item:active {
+    opacity: 0.6;
+}
+/* END NAV-BAR */
+
+main {
+    padding-top: 160px;
+    font-size: 18px;
+}
+
+/* HOME */
+.home {
+    letter-spacing: 0.6px;
+    margin: auto;
+    padding: 0 12vw;
+    height: 80vh;
+}
+
+.home-content {
+    text-align: justify;
+    float: left;
+    padding-top: 70px;
+}
+
+.home-content>p>span {
+    font-weight: 800;
+}
+
+.title-main {
+    margin: 20px 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-size: 28px;
+}
+
+.title-main>span {
+    font-weight: 800;
+    font-size: 38px;
+    color: #00d2df;
+    border-right: 2px solid rgb(179, 179, 179);
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.caixa-btn-home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.icon-btn {
+    width: 17px;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.linkedin {
+    border: 1px solid #0A66C2;
+}
+
+.github {
+    border: 1px solid #c408fd;
+}
+
+.btn-home:hover {
+    transform: scale(1.1);
+    border-color: #00d2df;
+    background-color: #00d4df23;
+    color: rgb(219, 219, 219);
+    text-decoration: underline;
+    transition: 0.5s;
+    text-shadow: 1px 1px 2px #00d2df;
+}
+
+.btn-home:active {
+    opacity: 0.6;
+}
+
+.caixa-img {
+    text-align: right;
+}
+/* END HOME */
+
+/* ABOUT ME */
+.sobre-mim {
+    background-color: #0a0d13;
+    padding: 100px 12vw;
+    overflow: auto;
+}
+
+.person-aboutMe {
+    width: 300px;
+    float: left;
+}
+
+.sobre-mim-content {
+    margin-left: 320px;
+}
+
+.sobre-mim-content h2 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #00d2df;
+}
+
+.sobre-mim-content h3 {
+    font-size: 26px;
+    margin: 15px 0;
+    letter-spacing: 0.5px;
+}
+
+.sobre-mim-content p {
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.caixa-btn-about {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.caixa-btn-about a {
+    display: inline-block;
+    border: 1px solid rgb(49, 224, 255);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.caixa-btn-about a:hover {
+    transform: scale(1.1);
+    background-color: #00d4df23;
+    color: rgb(219, 219, 219);
+    text-decoration: underline;
+    transition: 0.5s;
+    text-shadow: 1px 1px 2px #00d2df;
+}
+
+li {
+    list-style: none;
+}
+
+.caixa-btn-about li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icon/download.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* END ABOUT ME */
+
+/* HABILIDADES */
+.habilidades {
+    padding: 100px 12vw;
+    text-align: center;
+}
+
+.habilidades h2 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #00d2df;
+    text-align: center;
+}
+
+.habilidades p {
+    letter-spacing: 1px;
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+.caixa-skill {
+    width: 150px;
+    height: 120px;
+    background-color: #0a0d13;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: 50px;
+    box-shadow: 0px 0px 15px #4b5e85;
+    opacity: 0.5;
+    user-select: none;
+    border-radius: 15px;
+}
+
+.caixa-skill:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px #4b5e8560;
+    opacity: 1;
+    text-shadow: 0.8px 0.8px #00d2df;
+    background-color: #161b25;
+    cursor: grab;
+}
+
+.caixa-skill:active {
+    cursor: grabbing;
+    opacity: 0.8;
+    transition: 0s;
+}
+
+.top-caixa {
+    width: 100%;
+    height: 25%;
+    background-color: #161d2b;
+    box-sizing: border-box;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.x-top-caixa {
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 4px;
+    background-color: #1c2942;
+    color: rgb(179, 179, 179);
+    border-top-left-radius: 15px;
+}
+
+.name-skill {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+    font-size: 24px;
+}
+/* END HABILIDADES */
+
+/* PROJETOS */
+.projetos {
+    background-color: #0a0d13;
+    padding: 100px 12vw;
+    overflow: hidden;
+}
+
+.projetos h2 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #00d2df;
+    text-align: center;
+}
+
+.box-project {
+    display: none;
+}
+
+.box-text-projects {
+    margin-top: 80px;
+    margin-left: 600px;
+    /* background-color: rgba(255, 0, 0, 0.274); */
+    line-height: 25px;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+.box-text-projects h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.text-project {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.skill-project {
+    margin-bottom: 20px;
+    color: #00d2df;
+    text-align: left;
+}
+
+.skill-project span {
+    text-shadow: 0.5px 0.5px 1px red;
+}
+
+.link-project {
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(240, 240, 240, 0.747);
+}
+
+.link-project:hover {
+    transform: scale(1.1);
+    background-color: rgba(226, 226, 226, 0.11);
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px rgba(240, 240, 240, 0.747);
+    text-shadow: 0.5px 0.5px 1px #00d2df;
+}
+/* END PROJETOS */
+
+/* FOOTER */
+footer {
+    padding: 25px 200px;
+    text-align: center;
+}
+
+footer a {
+    color: #00d2df;
+    text-shadow: 0.5px 0.5px rgb(255, 0, 0);
+    text-decoration: underline;
+}
+/* END FOOTER */

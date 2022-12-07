@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio - Vitor Silva Santos</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/typing-animation.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
+    <!-- END CSS -->
+
+    <!-- Icon -->
+    <link rel="icon" href="./assets/img/icon/icon-web.png" type="image/png">
+    <!-- End Icon -->
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- END FONTS -->
+
+    <!-- LINKS SLICK -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <!-- END LINKS SLICK -->
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <p>
+                <a href="" class="name-logo">&#10094;Vitor-Silva-Santos&frasl;&#10095;</a>
+            </p>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#sobre-mim">Sobre mim</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#habilidades">Habilidades</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#projetos">Projetos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="home">
+            <div class="home-content">
+                <p>&#10092;strong&#10093; <span>Seja bem-vindo</span> &#10092;&frasl;strong&#10093;</p>
+                <h1 class="title-main">
+                    OLÁ, EU SOU <br>
+                    <span class="typing-animation">VITOR SILVA SANTOS</span> <br>
+                    DESENVOLVEDOR FRONT-END
+                </h1>
+                <div class="caixa-btn-home">
+                    <a href="https://www.linkedin.com/in/vitor-silva-036884228/" target="_blank"
+                        class="btn-home linkedin">
+                        &nbsp;<img class="icon-btn" src="./assets/img/icon/linkedin.png" alt=""> Linkedin&nbsp;
+                    </a>
+                    <a href="https://github.com/vitor-silva-santos" target="_blank" class="btn-home github">
+                        &nbsp;<img class="icon-btn" src="./assets/img/icon/github.png" alt=""> GitHub&nbsp;
+                    </a>
+                </div>
+            </div>
+            <div class="caixa-img">
+                <img class="programing-home" src="./assets/img/Programming.gif"
+                    alt="alguma coisa de tecnologia, um desenho/icone">
+            </div>
+        </section>
+
+        <section class="sobre-mim" id="sobre-mim">
+            <img class="person-aboutMe" src="./assets/img/person/person.png"
+                alt="minha foto talvez, ou um desenho animado de uma menino um pouco parecido comigo">
+            <div class="sobre-mim-content">
+                <h2>Sobre Mim</h2>
+                <h3>Osasco, São Paulo</h3>
+                <p>
+                    Meu nome é Vitor Silva Santos e sou um apaixonado por tecnologia
+                    que escolheu percorrer o caminho da programação, dedicando meus
+                    estudos para futuramento ser um desenvolvedor fullstack. Estou cursando
+                    Análise e Desenvolvimento de Sistemas e continuo meus estudos, sabendo que
+                    estamos sempre em constante aprendizado.
+                </p>
+                <div class="caixa-btn-about">
+                    <a href="" download="">
+                        <li>&nbsp;Baixar Currículo&nbsp;</li>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="habilidades" id="habilidades">
+            <h2>Habilidades</h2>
+            <p>
+                Habilidades técnicas que eu adquire atráves de muita prática e estudo.
+            </p>
+            <div class="caixa-skill">
+                <div class="top-caixa">
+                    <div class="x-top-caixa">X</div>
+                </div>
+                <span class="name-skill">HTML</span>
+            </div>
+            <div class="caixa-skill">
+                <div class="top-caixa">
+                    <div class="x-top-caixa">X</div>
+                </div>
+                <span class="name-skill">CSS</span>
+            </div>
+            <div class="caixa-skill">
+                <div class="top-caixa">
+                    <div class="x-top-caixa">X</div>
+                </div>
+                <span class="name-skill">JavaScript</span>
+            </div>
+            <br>
+            <div class="caixa-skill">
+                <div class="top-caixa">
+                    <div class="x-top-caixa">X</div>
+                </div>
+                <span class="name-skill">Git</span>
+            </div>
+            <div class="caixa-skill">
+                <div class="top-caixa">
+                    <div class="x-top-caixa">X</div>
+                </div>
+                <span class="name-skill">GitHub</span>
+            </div>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <h2>Projetos</h2>
+
+            <div class="carousel">
+                <div><img class="img-carousel"  id="ricky-sushi" onclick="infoProject(id)" src="./assets/img/images-projects/ricky-sushi.png" alt="projeto ricky-sushi"/></div>
+                <div><img class="img-carousel" id="convert-real" onclick="infoProject(id)" src="./assets/img/images-projects/convert-real.png" alt="projeto convert-real"/></div>
+                <div><img class="img-carousel" id="easy-shop" onclick="infoProject(id)" src="./assets/img/images-projects/easy-shop.png" alt="projeto easy-shop"/></div>
+                <div><img class="img-carousel" id="jogo-da-velha" onclick="infoProject(id)" src="./assets/img/images-projects/jogo-da-velha.png" alt="projeto jogo-da-velha"/></div>
+            </div>
+
+            <div class="box-text-projects">
+                <div class="box-project">
+                    <h3>RESTAURANTE - RICKY SUSHI</h3>
+                    <p class="text-project">
+                        Meu primeiro projeto colocando em prática alguns conceitos de HTML e CSS.
+                        Com ele consegui criar algumas noções de estruturar o projeto antes de 
+                        colocar em prática. O site foi criado como desafio de pegar algum comércio 
+                        da região e criar um site para ele.
+                    </p>
+                    <p class="skill-project">Tecnologias usadas no projeto: <span>HTML e CSS</span>.</p>
+                    <a class="link-project" target="_blank" href="https://vitor-silva-santos.github.io/restaurante-ricky-sushi/">Visualizar</a>
+                </div>
+
+                <div class="box-project">
+                    <h3>CONVERSOR DE REAL</h3>
+                    <p class="text-project">
+                        Esse projeto foi feito com o intuito de melhorar 
+                        técnicas com JavaScript. O conversor no momento utiliza os valores 
+                        das moedas de forma manual.
+                    </p>
+                    <p class="skill-project">Tecnologias usadas no projeto: <span>HTML, CSS e JavaScript</span>.</p>
+                    <a class="link-project" target="_blank" href="https://vitor-silva-santos.github.io/real-converter/">Visualizar</a>
+                </div>
+
+                <div class="box-project">
+                    <h3>EASY SHOP</h3>
+                    <p class="text-project">
+                        Projeto foi criado para colocar em prática técnicas de Responsividade.
+                    </p>
+                    <p class="skill-project">Tecnologias usadas no projeto: <span>HTML e CSS</span>.</p>
+                    <a class="link-project" target="_blank" href="https://vitor-silva-santos.github.io/project-easy-shopping/">Visualizar</a>
+                </div>
+                
+                <div class="box-project">
+                    <h3>JOGO DA VELHA</h3>
+                    <p class="text-project">
+                        Esse projeto foi feito como desafio da faculdade para praticar conceitos de JavaScript
+                    </p>
+                    <p class="skill-project">Tecnologias usadas no projeto: <span>HTML, CSS e JavaScript</span>.</p>
+                    <a class="link-project" target="_blank" href="https://vitor-silva-santos.github.io/jogo-da-velha/">Visualizar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito por <a target="_blank" href="https://www.linkedin.com/in/vitor-silva-036884228/">Vitor Silva Santos</a></p>
+        <p>Email para contato: vithorss2203@gmail.com</p>
+    </footer>
+
+
+    <script src="./assets/js/carousel.js"></script>
+</body>
+
+</html>
