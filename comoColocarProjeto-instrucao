@@ -1,0 +1,4 @@
+MEDIDA da imagem: 500 X 300 -> 350 X 210
+
+CRIAR a div da imagem na div carousel e depois criar uma div de texto do projeto
+CRIA uma condição no carousel.js daquele projeto, prestar atenção na ordem da lista, sempre adicionar nas outras condições aquele novo elemento(projeto) que foi adicionado

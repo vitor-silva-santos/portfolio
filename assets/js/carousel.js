@@ -40,6 +40,7 @@ const infoProject = (id) => {
     boxTextProject[1].style.display = "none"
     boxTextProject[2].style.display = "none"
     boxTextProject[3].style.display = "none"
+    boxTextProject[4].style.display = "none"
 
     boxTextProject[0].style.display = "block"
   }
@@ -48,6 +49,7 @@ const infoProject = (id) => {
     boxTextProject[0].style.display = "none"
     boxTextProject[2].style.display = "none"
     boxTextProject[3].style.display = "none"
+    boxTextProject[4].style.display = "none"
 
     boxTextProject[1].style.display = "block"
   }
@@ -56,6 +58,7 @@ const infoProject = (id) => {
     boxTextProject[0].style.display = "none"
     boxTextProject[1].style.display = "none"
     boxTextProject[3].style.display = "none"
+    boxTextProject[4].style.display = "none"
 
     boxTextProject[2].style.display = "block"
   }
@@ -64,8 +67,18 @@ const infoProject = (id) => {
     boxTextProject[0].style.display = "none"
     boxTextProject[1].style.display = "none"
     boxTextProject[2].style.display = "none"
+    boxTextProject[4].style.display = "none"
 
     boxTextProject[3].style.display = "block"
+  }
+
+  if (projectSelected.id === "calculadora") {
+    boxTextProject[0].style.display = "none"
+    boxTextProject[1].style.display = "none"
+    boxTextProject[2].style.display = "none"
+    boxTextProject[3].style.display = "none"
+
+    boxTextProject[4].style.display = "block"
   }
 }
 

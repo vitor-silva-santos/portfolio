@@ -46,13 +46,3 @@ li button:before {
 li.slick-active button:before {
     background-color: #b5e9ff;
 }
-
-
-
-
-.teste-texto {
-    position: absolute;
-    z-index: 1;
-    /* top: 45px;
-    left: 40px; */
-}
